@@ -1,0 +1,134 @@
+.home-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+}
+
+.home-header {
+  border-bottom: solid 1px #cccc;
+  background-color: #4f8bfe;
+  height: 115px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 150px;
+  color: #ffff;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home-header h2 {
+  margin: 100px;
+}
+
+.note-main {
+  column-count: 5;
+  margin-left: 110px;
+  padding: 50px 30px 20px 60px;
+}
+
+.note-main.archived {
+  margin-top: 116px;
+}
+
+.note {
+  border: 1px solid #1373a0;
+  display: inline-block;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  text-align: start;
+  margin-bottom: 20px;
+  width: 250px;
+  box-sizing: border-box;
+  break-inside: avoid;
+  position: relative;
+}
+
+.note-sub {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.note:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.note h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 25px 15px 20px 15px;
+}
+
+.underline {
+  display: flex;
+  height: 1px;
+  background-color: #1373a0;
+  width: 100%;
+}
+
+.note p {
+  margin: 30px 30px 50px 20px;
+  font-size: 16px;
+  color: #494949;
+  flex-grow: 1;
+}
+
+.note-actions,
+.note-actions-del {
+  display: none;
+}
+
+.note-actions.visible {
+  display: flex;
+  margin: auto 0 0 auto;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.note-actions-del.visible {
+  display: flex;
+  margin: auto 0 0 auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.note-actions img,
+.note-actions-del img {
+  width: 20px;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1500px) {
+  .note-main {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 1235px) {
+  .note-main {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 980px) {
+  .note-main {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 715px) {
+  .note-main {
+    column-count: 1;
+  }
+}

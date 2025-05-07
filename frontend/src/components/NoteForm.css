@@ -1,0 +1,85 @@
+.form-div {
+  display: flex;
+  justify-content: center;
+  margin: 116px 0 0 110px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 50px;
+  border: solid 1px #cccc;
+  border-radius: 20px;
+  padding: 15px 15px 0 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.delete-icon-form,
+.title,
+.form-btn {
+  display: none;
+}
+
+.delete-icon-form.on {
+  display: flex;
+  cursor: pointer;
+  width: 20px;
+  height: auto;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+.title.on,
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#title {
+  display: block;
+  width: 90%;
+  align-self: flex-start;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 0px;
+  border-bottom: 1px solid #cccc;
+  padding: 5px;
+}
+
+#title:focus,
+#content:focus {
+  outline: none;
+  border: 0px;
+  border-bottom: 1px solid #4f8bfe;
+}
+
+#content {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 0px;
+  border-bottom: 1px solid #cccc;
+  padding: 5px;
+  resize: none;
+}
+
+.form-btn.on {
+  display: block;
+  width: 100px;
+  height: 35px;
+  background-color: #ffff;
+  color: #757575;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+.form-btn.on:hover {
+  background-color: #4f8bfe;
+  color: #ffff;
+}
